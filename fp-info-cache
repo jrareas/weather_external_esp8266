@@ -1,4 +1,4 @@
-20138535607383614
+20158230746690176
 2N2222
 TO127P584H533-3
 
@@ -6,6 +6,27 @@ TO127P584H533-3
 0
 3
 3
+Antennas
+Pulse_W3011
+Pulse RF Antenna, 4mm Clearance
+antenna rf
+0
+3
+2
+Antennas
+Texas_SWRA117D_2.4GHz_Left
+http://www.ti.com/lit/an/swra117d/swra117d.pdf
+PCB antenna
+0
+2
+2
+Antennas
+Texas_SWRA117D_2.4GHz_Right
+http://www.ti.com/lit/an/swra117d/swra117d.pdf
+PCB antenna
+0
+2
+2
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -50637,6 +50658,13 @@ XTAL_ECS-160-18-4XEN
 0
 2
 2
+ESP8285
+QFN50P500X500X90-33N
+
+
+0
+33
+33
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -54970,6 +54998,20 @@ solder jumper open
 0
 5
 3
+KiCADinfo_Castellations
+Conn_WirePad_1x07_sml
+
+
+0
+14
+7
+KiCADinfo_Castellations
+RECOM_SMD10_ADAPTER
+
+SC-74
+0
+20
+10
 LED_SMD
 LED-APA102-2020
 http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf
@@ -58043,6 +58085,55 @@ Mounting 4.5mm 9774100982
 0
 8
 1
+MyAntennas
+AN91445
+
+
+0
+2
+2
+MyAntennas
+DM00024648
+
+
+0
+6
+2
+MyAntennas
+SWRA117D
+
+
+0
+10
+2
+MyAntennas
+SWRA118-FL
+
+
+0
+2
+2
+MyAntennas
+SWRA350
+
+
+0
+12
+0
+MyAntennas
+SWRA416
+
+
+0
+28
+3
+MyAntennas
+SWRU120B
+
+
+0
+12
+2
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
