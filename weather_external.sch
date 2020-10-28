@@ -6,12 +6,12 @@ encoding utf-8
 Sheet 1 1
 Title ""
 Date ""
-Rev ""
+Rev "1.3 "
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Jareas"
 $EndDescr
 $Comp
 L ESP8266-12E_ESP-12E:ESP8266-12E_ESP-12E ESP8266-12E1
@@ -110,13 +110,13 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0110
 U 1 1 5FB0BB1F
-P 7900 4000
-F 0 "#PWR0110" H 7900 3750 50  0001 C CNN
-F 1 "GND" H 7905 3827 50  0000 C CNN
-F 2 "" H 7900 4000 50  0001 C CNN
-F 3 "" H 7900 4000 50  0001 C CNN
-	1    7900 4000
-	1    0    0    -1  
+P 7500 4000
+F 0 "#PWR0110" H 7500 3750 50  0001 C CNN
+F 1 "GND" H 7505 3827 50  0000 C CNN
+F 2 "" H 7500 4000 50  0001 C CNN
+F 3 "" H 7500 4000 50  0001 C CNN
+	1    7500 4000
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0111
@@ -267,7 +267,7 @@ U 1 1 5FE0D289
 P 3800 1450
 F 0 "JP1" H 3800 1635 50  0000 C CNN
 F 1 "Jumper_NO_Small" H 3800 1544 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3800 1450 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3800 1450 50  0001 C CNN
 F 3 "~" H 3800 1450 50  0001 C CNN
 	1    3800 1450
 	1    0    0    -1  
@@ -350,15 +350,8 @@ Wire Wire Line
 	4350 2300 4550 2300
 Text GLabel 3650 1950 0    50   Input ~ 0
 GPIO15
-Wire Wire Line
-	3650 1950 4550 1950
-Wire Wire Line
-	4550 1950 4550 2300
-Connection ~ 4550 2300
 Text GLabel 7550 3700 2    50   Input ~ 0
 GPIO15
-Wire Wire Line
-	7450 4000 7900 4000
 Text GLabel 3450 1450 0    50   Input ~ 0
 GPIO16
 Wire Wire Line
@@ -445,4 +438,10 @@ Wire Wire Line
 	7250 4600 7750 4600
 Wire Wire Line
 	7250 4700 7500 4700
+Wire Wire Line
+	3650 1950 4350 1950
+Wire Wire Line
+	4350 1950 4350 2300
+Wire Wire Line
+	7450 4000 7500 4000
 $EndSCHEMATC
