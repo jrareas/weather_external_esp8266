@@ -936,4 +936,36 @@ Wire Wire Line
 	5650 6300 5650 6650
 Wire Wire Line
 	3550 6150 4100 6150
+Text GLabel 7550 3500 2    50   Input ~ 0
+GPIO13
+Wire Wire Line
+	7450 3500 7550 3500
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5FC5BE4B
+P 8800 4100
+F 0 "J4" H 8908 4281 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 8908 4190 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8800 4100 50  0001 C CNN
+F 3 "~" H 8800 4100 50  0001 C CNN
+	1    8800 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5FC5C799
+P 8950 4200
+F 0 "#PWR0124" H 8950 3950 50  0001 C CNN
+F 1 "GND" H 8955 4027 50  0000 C CNN
+F 2 "" H 8950 4200 50  0001 C CNN
+F 3 "" H 8950 4200 50  0001 C CNN
+	1    8950 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8950 4200 8600 4200
+Text GLabel 9200 4100 2    50   Input ~ 0
+GPIO13
+Wire Wire Line
+	9200 4100 8600 4100
 $EndSCHEMATC
