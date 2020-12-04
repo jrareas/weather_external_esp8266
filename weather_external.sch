@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title ""
 Date ""
-Rev "1.4"
+Rev "1.5"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -226,17 +226,6 @@ F 3 "~" H 3800 1450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8200 1950 9100 1950
-$Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 5F94EE4D
-P 4550 6150
-F 0 "J1" H 4658 6331 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 4658 6240 50  0000 C CNN
-F 2 "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm" H 4550 6150 50  0001 C CNN
-F 3 "~" H 4550 6150 50  0001 C CNN
-	1    4550 6150
-	-1   0    0    -1  
-$EndComp
 Text GLabel 1600 1300 0    50   Input ~ 0
 RST
 $Comp
@@ -383,61 +372,6 @@ F 2 "" H 2400 3600 50  0001 C CNN
 F 3 "" H 2400 3600 50  0001 C CNN
 	1    2400 3600
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 5FB54863
-P 3350 6850
-F 0 "D1" V 3389 6732 50  0000 R CNN
-F 1 "GREEN" V 3298 6732 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 3350 6850 50  0001 C CNN
-F 3 "~" H 3350 6850 50  0001 C CNN
-	1    3350 6850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R6
-U 1 1 5FB54E5E
-P 3700 7200
-F 0 "R6" H 3759 7246 50  0000 L CNN
-F 1 "220" H 3759 7155 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3700 7200 50  0001 C CNN
-F 3 "~" H 3700 7200 50  0001 C CNN
-	1    3700 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R5
-U 1 1 5FB5512E
-P 3350 7200
-F 0 "R5" H 3409 7246 50  0000 L CNN
-F 1 "220" H 3409 7155 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3350 7200 50  0001 C CNN
-F 3 "~" H 3350 7200 50  0001 C CNN
-	1    3350 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 5FB5D188
-P 3700 6850
-F 0 "D2" V 3739 6732 50  0000 R CNN
-F 1 "RED" V 3648 6732 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 3700 6850 50  0001 C CNN
-F 3 "~" H 3700 6850 50  0001 C CNN
-	1    3700 6850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:CP C4
-U 1 1 5FE9BBD1
-P 4100 6300
-F 0 "C4" H 4218 6346 50  0000 L CNN
-F 1 "CP" H 4218 6255 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 4138 6150 50  0001 C CNN
-F 3 "~" H 4100 6300 50  0001 C CNN
-	1    4100 6300
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x06_Female J8
@@ -655,243 +589,8 @@ Wire Wire Line
 Connection ~ 3900 3450
 Wire Wire Line
 	3900 3800 3900 3900
-$Comp
-L Battery_Management:MCP73831-2-OT U1
-U 1 1 5FB4723F
-P 2450 6500
-F 0 "U1" H 2450 6981 50  0000 C CNN
-F 1 "MCP73831-2-OT" H 2450 6890 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2500 6250 50  0001 L CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 2300 6450 50  0001 C CNN
-	1    2450 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 5FB479AA
-P 2450 6950
-F 0 "#PWR0109" H 2450 6700 50  0001 C CNN
-F 1 "GND" H 2455 6777 50  0000 C CNN
-F 2 "" H 2450 6950 50  0001 C CNN
-F 3 "" H 2450 6950 50  0001 C CNN
-	1    2450 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 6800 2450 6850
-Wire Wire Line
-	3350 7000 3350 7100
-Wire Wire Line
-	3700 7000 3700 7100
-$Comp
-L power:VCC #PWR0115
-U 1 1 5FB558FE
-P 3700 7450
-F 0 "#PWR0115" H 3700 7300 50  0001 C CNN
-F 1 "VCC" H 3715 7623 50  0000 C CNN
-F 2 "" H 3700 7450 50  0001 C CNN
-F 3 "" H 3700 7450 50  0001 C CNN
-	1    3700 7450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3700 7300 3700 7450
-$Comp
-L power:GND #PWR0116
-U 1 1 5FB5A2FA
-P 3350 7400
-F 0 "#PWR0116" H 3350 7150 50  0001 C CNN
-F 1 "GND" H 3355 7227 50  0000 C CNN
-F 2 "" H 3350 7400 50  0001 C CNN
-F 3 "" H 3350 7400 50  0001 C CNN
-	1    3350 7400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 7300 3350 7400
-Wire Wire Line
-	2850 6600 3350 6600
-Wire Wire Line
-	3350 6600 3350 6700
-Wire Wire Line
-	3350 6600 3700 6600
-Wire Wire Line
-	3700 6600 3700 6700
-Connection ~ 3350 6600
-$Comp
-L Device:CP C7
-U 1 1 5FB67250
-P 1550 6600
-F 0 "C7" H 1668 6646 50  0000 L CNN
-F 1 "CP" H 1668 6555 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 1588 6450 50  0001 C CNN
-F 3 "~" H 1550 6600 50  0001 C CNN
-	1    1550 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0117
-U 1 1 5FB67C25
-P 2450 5900
-F 0 "#PWR0117" H 2450 5750 50  0001 C CNN
-F 1 "VCC" H 2465 6073 50  0000 C CNN
-F 2 "" H 2450 5900 50  0001 C CNN
-F 3 "" H 2450 5900 50  0001 C CNN
-	1    2450 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 6200 2450 6100
-Wire Wire Line
-	1550 6450 1550 6100
-Wire Wire Line
-	1550 6100 2450 6100
-Connection ~ 2450 6100
-Wire Wire Line
-	2450 6100 2450 5900
-Wire Wire Line
-	2450 6850 2000 6850
-Wire Wire Line
-	1550 6850 1550 6750
-Connection ~ 2450 6850
-Wire Wire Line
-	2450 6850 2450 6950
-$Comp
-L Device:R_Small R7
-U 1 1 5FB766B1
-P 2000 6750
-F 0 "R7" H 2059 6796 50  0000 L CNN
-F 1 "2k" H 2059 6705 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2000 6750 50  0001 C CNN
-F 3 "~" H 2000 6750 50  0001 C CNN
-	1    2000 6750
-	-1   0    0    1   
-$EndComp
-Connection ~ 2000 6850
-Wire Wire Line
-	2000 6850 1550 6850
-Wire Wire Line
-	2050 6600 2000 6600
-Wire Wire Line
-	2000 6600 2000 6650
-Wire Wire Line
-	2850 6400 3550 6400
-Wire Wire Line
-	3550 6400 3550 6150
-$Comp
-L power:GND #PWR0122
-U 1 1 5FBA1BB4
-P 4100 6600
-F 0 "#PWR0122" H 4100 6350 50  0001 C CNN
-F 1 "GND" H 4105 6427 50  0000 C CNN
-F 2 "" H 4100 6600 50  0001 C CNN
-F 3 "" H 4100 6600 50  0001 C CNN
-	1    4100 6600
-	1    0    0    -1  
-$EndComp
-Connection ~ 4100 6150
-Wire Wire Line
-	4100 6150 4250 6150
-Wire Wire Line
-	4350 6250 4350 6550
-$Comp
-L dk_Transistors-FETs-MOSFETs-Single:DMG2305UX-13 Q1
-U 1 1 5FBB019A
-P 5650 5800
-F 0 "Q1" H 5758 5853 60  0000 L CNN
-F 1 "DMG2305UX-13" H 5758 5747 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 5850 6000 60  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf" H 5850 6100 60  0001 L CNN
-F 4 "DMG2305UX-13DICT-ND" H 5850 6200 60  0001 L CNN "Digi-Key_PN"
-F 5 "DMG2305UX-13" H 5850 6300 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5850 6400 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5850 6500 60  0001 L CNN "Family"
-F 8 "https://www.diodes.com/assets/Datasheets/DMG2305UX.pdf" H 5850 6600 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/diodes-incorporated/DMG2305UX-13/DMG2305UX-13DICT-ND/4251589" H 5850 6700 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 20V 4.2A SOT23" H 5850 6800 60  0001 L CNN "Description"
-F 11 "Diodes Incorporated" H 5850 6900 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5850 7000 60  0001 L CNN "Status"
-	1    5650 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0123
-U 1 1 5FBB14A4
-P 5250 5700
-F 0 "#PWR0123" H 5250 5550 50  0001 C CNN
-F 1 "VCC" H 5265 5873 50  0000 C CNN
-F 2 "" H 5250 5700 50  0001 C CNN
-F 3 "" H 5250 5700 50  0001 C CNN
-	1    5250 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 5700 5250 5900
-Wire Wire Line
-	5250 5900 5350 5900
-Text GLabel 4250 5850 1    50   Input ~ 0
-VBAT
-Wire Wire Line
-	4250 5850 4250 6150
-Connection ~ 4250 6150
-Wire Wire Line
-	4250 6150 4350 6150
-Text GLabel 5650 5450 1    50   Input ~ 0
-VBAT
-Wire Wire Line
-	5650 5450 5650 5600
 Wire Wire Line
 	3900 3200 3900 3450
-$Comp
-L Device:D D3
-U 1 1 5FBC9DF3
-P 5250 6150
-F 0 "D3" V 5296 6070 50  0000 R CNN
-F 1 "1N4148" V 5205 6070 50  0000 R CNN
-F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 5250 6150 50  0001 C CNN
-F 3 "~" H 5250 6150 50  0001 C CNN
-	1    5250 6150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5650 6000 5650 6300
-Wire Wire Line
-	5250 6300 5650 6300
-Connection ~ 5650 6300
-Wire Wire Line
-	5250 5900 5250 6000
-Connection ~ 5250 5900
-$Comp
-L power:GND #PWR0126
-U 1 1 5FBD5A4F
-P 4950 5600
-F 0 "#PWR0126" H 4950 5350 50  0001 C CNN
-F 1 "GND" H 4955 5427 50  0000 C CNN
-F 2 "" H 4950 5600 50  0001 C CNN
-F 3 "" H 4950 5600 50  0001 C CNN
-	1    4950 5600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R8
-U 1 1 5FBD62A5
-P 4950 5850
-F 0 "R8" H 5009 5896 50  0000 L CNN
-F 1 "100k" H 5009 5805 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4950 5850 50  0001 C CNN
-F 3 "~" H 4950 5850 50  0001 C CNN
-	1    4950 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 5950 4950 6050
-Wire Wire Line
-	4950 5600 4950 5750
-Wire Wire Line
-	4950 6050 5250 6050
-Wire Wire Line
-	5250 6050 5250 6000
-Connection ~ 5250 6000
 $Comp
 L Device:D D4
 U 1 1 5FBE2D43
@@ -903,13 +602,6 @@ F 3 "~" H 3900 3050 50  0001 C CNN
 	1    3900 3050
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4100 6450 4100 6550
-Wire Wire Line
-	4100 6550 4350 6550
-Connection ~ 4100 6550
-Wire Wire Line
-	4100 6550 4100 6600
 $Comp
 L power:VCC #PWR0125
 U 1 1 5FC17ECD
@@ -921,21 +613,6 @@ F 3 "" H 3900 2900 50  0001 C CNN
 	1    3900 2900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR0127
-U 1 1 5FC1CE5A
-P 5650 6650
-F 0 "#PWR0127" H 5650 6500 50  0001 C CNN
-F 1 "+3.3V" H 5665 6823 50  0000 C CNN
-F 2 "" H 5650 6650 50  0001 C CNN
-F 3 "" H 5650 6650 50  0001 C CNN
-	1    5650 6650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5650 6300 5650 6650
-Wire Wire Line
-	3550 6150 4100 6150
 Text GLabel 7550 3500 2    50   Input ~ 0
 GPIO13
 Wire Wire Line
